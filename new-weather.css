@@ -1,0 +1,80 @@
+/*$margins: 0 2rem 2rem;*/
+body {
+  /*  box-sizing: border-box;*/
+  background-image: url(weatherimage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500%;
+  /*display:inline-block;*/ }
+
+.text-center, .data-item {
+  color: #3a3b3b; }
+
+.jumbotron, .well {
+  /*background: #888;*/
+  background: #b1b3b3;
+  color: #3a3b3b; }
+
+#london {
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size: 3rem;
+  height: 6rem;
+  width: 50rem;
+  margin-left: 17rem;
+  padding: 0;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease; }
+  #london:hover, #london:focus {
+    font-size: 3.5rem;
+    outline: none; }
+
+#seattle {
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size: 3rem;
+  height: 6rem;
+  width: 50rem;
+  margin-left: 10rem;
+  padding: 0;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease; }
+  #seattle:hover, #seattle:focus {
+    font-size: 3.5rem;
+    outline: none; }
+
+.seattle {
+  background-color: #3a3b3b;
+  color: #3a3b3b; }
+  .seattle:hover, .seattle:focus {
+    background-color: #b1b3b3; }
+  .seattle:active {
+    background-color: #3a3b3b; }
+
+.london {
+  background-color: #3a3b3b;
+  color: #3a3b3b; }
+  .london:hover, .london:focus {
+    background-color: #b1b3b3; }
+  .london:active {
+    background-color: #3a3b3b; }
+
+.seattle {
+  background-color: #3a3b3b;
+  color: #3a3b3b; }
+  .seattle:hover, .seattle:focus {
+    background-color: #b1b3b3; }
+  .seattle:active {
+    background-color: #3a3b3b; }
+
+.london {
+  background-color: #3a3b3b;
+  color: #3a3b3b; }
+  .london:hover, .london:focus {
+    background-color: #b1b3b3; }
+  .london:active {
+    background-color: #3a3b3b; }
+
+.copyright {
+  color: #3a3b3b; }
+
+/*# sourceMappingURL=new-weather.css.map */

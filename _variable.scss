@@ -1,0 +1,18 @@
+$black:rgb(58,59,59);
+/*$margins: 0 2rem 2rem;*/
+$gray: rgb(177, 179, 179);
+$font-size:3rem;
+
+$london-bg-color: $black;
+$london-bg-color-alt: $gray;
+$london-height-size: 6rem;
+$london-width-size:50rem;
+$london-font-size-alt:3.5rem;
+
+
+$note-map: (
+   //regular bg, hover bg, active bg
+   seattle: ($black,$gray,$black),
+   london:($black,$gray,$black)
+
+);

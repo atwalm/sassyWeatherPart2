@@ -1,0 +1,121 @@
+@import "variable";
+body {
+/*  box-sizing: border-box;*/
+  background-image: url(weatherimage.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500%;
+
+  /*display:inline-block;*/
+}
+
+.text-center, .data-item
+{
+color: $black;
+}
+
+.jumbotron, .well
+{
+/*background: #888;*/
+background: $gray;
+color: $black;
+}
+
+
+#london
+{
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size:$font-size;
+  height: $london-height-size;
+  width: $london-width-size;
+  margin-left: 17rem;
+  padding: 0;
+// transition: all 0.2s ease;
+  transition: background-color 1s ease;
+
+&:hover,
+&:focus
+
+ {
+  font-size: $london-font-size-alt;
+  outline: none;
+  //background: $london-bg-color-alt;
+//transform: scale(0.9) rotate(360deg);
+}
+}
+
+#seattle
+{
+  border: 0.25rem solid currentColor;
+  cursor: pointer;
+  font-size: $font-size;
+  height: $london-height-size;
+  width: $london-width-size;
+  margin-left: 10rem;
+  padding: 0;
+  //transition: all 0.2s ease;
+  transition: background-color 1s ease;
+
+&:hover,
+&:focus
+
+ {
+  font-size: $london-font-size-alt;
+  outline: none;
+//  background:$london-bg-color-alt
+  //transform: scale(0.9) rotate(360deg);
+
+}
+}
+
+
+
+// set up an @each loop to go over the note map
+// and build the relevant color styles
+@each $seattle, $colors in $note-map {
+  .#{$seattle} { // interpolating $seattle
+    // colors are in regular, hover, active order
+    $regular: nth($colors, 1);
+    $hover: nth($colors, 2);
+    $active: nth($colors, 3);
+
+    background-color: $regular;
+    color: $active;
+
+    &:hover,
+    &:focus {
+      background-color: $hover;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+  }
+}
+
+
+@each $london, $colors in $note-map {
+  .#{$london} { // interpolating $seattle
+    // colors are in regular, hover, active order
+    $regular: nth($colors, 1); // $black
+    $hover: nth($colors, 2); // $gray
+    $active: nth($colors, 3); // $black
+
+    background-color: $regular;
+    color: $active;
+
+    &:hover,
+    &:focus {
+      background-color: $hover;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+  }
+}
+
+.copyright
+{
+color: $black;
+}
